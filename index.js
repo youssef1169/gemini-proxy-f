@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json({ limit: '25mb' })); // allow large base64 bodies
 
 const MODEL = 'gemini-2.5-flash-lite';
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent`;
 
 app.get('/', (req, res) => {
   res.send('✅ Gemini Proxy is running');
